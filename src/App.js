@@ -7,7 +7,7 @@ import LoadingButton from './components/LoadingButton';
 import Kaka from './components/Kaka';
 import ModalComponent from './components/Modal';
 import { useState } from 'react';
-import pics from './components/data/pic';
+import pics from './data/pic';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false)
