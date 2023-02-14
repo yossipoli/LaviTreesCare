@@ -6,8 +6,8 @@ const Image = styled.img`
     height: 300px;
     max-width: 600px;
     max-height: 300px;
-    min-width: 600px;
-    min-height: 300px;
+    /* min-width: 600px;
+    min-height: 300px; */
 `
 
 const ImageTitle = styled.h3`

@@ -8,6 +8,7 @@ import Kaka from './components/Kaka';
 import ModalComponent from './components/Modal';
 import { useState } from 'react';
 import pics from './data/pic';
+import FooterComponent from './components/Footer';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -28,14 +29,15 @@ function App() {
         <LoadingButton setModal={() => setIsModalOpen(!isModalOpen)} />
         {isModalOpen && <ModalComponent setModal={() => setIsModalOpen(false)} />}
         <Iframe 
-          width="640" 
-          height="360" 
+          // width="640" 
+          // height="360" 
           src="https://www.youtube.com/embed/SBYn0a5TLQI" 
           title="גיזום עצים - מתי תדעו שצריך? המדריך המלא" 
           frameBorder="0" 
           allow= 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           allowfullscreen
           />
+          <FooterComponent/>
       </header>
     </div>
   );
